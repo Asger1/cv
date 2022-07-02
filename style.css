@@ -1,0 +1,101 @@
+:root {
+    --prussian: #02394f;
+    --steel: #4682B4;
+    --turquoise: #4ECDC4;
+    --light: #F5F5F5;
+    --sweet: #FF6B6B;
+    --bright: #B9314F;
+    --gray: #323232;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #202020;
+}
+
+nav {
+    background-color: var(--gray);
+    position: fixed;
+    height: 100vh;
+    width: 5rem;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    color: var(--light);
+}
+
+.nav-item {
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-text {
+    display: none;
+    padding: 1rem 0;
+    font-weight: 500;
+}
+
+.nav-item:last-child {
+    margin-top: auto;
+    background-color: var(--bright);
+}
+
+.nav-icon {
+    width: 5rem;
+    padding: 1rem 0;
+}
+
+.nav-item:hover {
+    background-color: var(--light);
+    color: var(--bright);
+}
+
+nav:hover {
+    width: 16rem;
+}
+
+nav:hover .nav-text {
+    display: inline;
+    text-align: start;
+}
+
+main {
+    color: var(--light);
+    margin-left: 5rem;
+    padding: 1rem 3rem;
+}
+
+h1, hr {
+    color: crimson;
+    border-color: crimson;
+}
+
+h2 {
+    color: var(--sweet);
+    font-style: italic;
+}
+
+p {
+    font-size: 120%;
+}
+
+@media (max-width: 768px)
+{
+    nav {
+        height: 5rem;
+        width: 100vw;
+    }
+}
